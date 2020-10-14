@@ -1,1 +1,3 @@
 Range view (RV) = Depth map (DM)
+Fusion: RGB and RV(DM)
+You can use Fscore_Normalized_RangeView.m and Fusion_distance.
