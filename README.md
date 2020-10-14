@@ -10,4 +10,4 @@ Cropping the 3D point clouds.
 
 3D point clouds:
 
-![3D_Point_Cloud](https://github.com/gledsonmelotti/Multimodal-deep-learning-combining-camera-LIDAR-data-/tree/main/Images/Cropping_Examples.png)
+![3D_Point_Cloud](https://github.com/gledsonmelotti/Multimodal-deep-learning-combining-camera-LIDAR-data-/blob/main/Images/Cropping_Examples.png)
