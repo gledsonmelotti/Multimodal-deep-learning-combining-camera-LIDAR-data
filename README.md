@@ -1,5 +1,4 @@
-# Multimodal-deep-learning-combining-camera-LIDAR-data-
-Multimodal deep-learning for object recognition combining camera and LIDAR data
+# Multimodal deep-learning for object recognition combining camera and LIDAR data
 
 Link: https://ieeexplore.ieee.org/document/9096138
 
