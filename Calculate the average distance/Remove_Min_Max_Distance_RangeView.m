@@ -33,13 +33,13 @@ for i=1:size(diretorio,1)
     MEDPed = [MEDPed;MEDIO];
 end
 
-path = 'D:\BF_DM_13_13\Tres_classes\train\Car'
+path = 'D:\BF_DM_13_13\Tres_classes\train\Car2'
 diretorio = dir(path)
 diretorio = diretorio(3:end,:);
-MEDCar =[];
+MEDCar2 =[];
 for i=1:size(diretorio,1)
     i
-    figura = strcat('D:\BF_DM_13_13\Tres_classes\train\Car\',diretorio(i).name);
+    figura = strcat('D:\BF_DM_13_13\Tres_classes\train\Car2\',diretorio(i).name);
     I = imread(figura);
     vector = I(:);
     
@@ -56,7 +56,7 @@ for i=1:size(diretorio,1)
     end
     
     MEDIO = sum(vector)/(size(vector,1));
-    MEDCar = [MEDCar;MEDIO];
+    MEDCar2 = [MEDCar2;MEDIO];
 end
 
 path = 'D:\BF_DM_13_13\Tres_classes\train\Cyclist'
@@ -85,7 +85,7 @@ for i=1:size(diretorio,1)
     MEDCyc = [MEDCyc;MEDIO];
 end
 
-Train_Remove_MIN_MAX_RI = [MEDPed;MEDCar;MEDCyc];
+Train_Remove_MIN_MAX_RI = [MEDPed;MEDCar2;MEDCyc];
 save Train_Remove_MIN_MAX_RI.mat Train_Remove_MIN_MAX_RI
 
 %% Range Inverse
@@ -117,13 +117,13 @@ for i=1:size(diretorio,1)
     MEDPed = [MEDPed;MEDIO];
 end
  
-path = 'D:\BF_DM_13_13\Tres_classes\validation\Car'
+path = 'D:\BF_DM_13_13\Tres_classes\validation\Car2'
 diretorio = dir(path)
 diretorio = diretorio(3:end,:);
-MEDCar = [];
+MEDCar2 = [];
 for i=1:size(diretorio,1)
     i
-    figura = strcat('D:\BF_DM_13_13\Tres_classes\validation\Car\',diretorio(i).name);
+    figura = strcat('D:\BF_DM_13_13\Tres_classes\validation\Car2\',diretorio(i).name);
     I = imread(figura);
     vector = I(:);
     
@@ -140,7 +140,7 @@ for i=1:size(diretorio,1)
     end
     
     MEDIO = sum(vector)/(size(vector,1));
-    MEDCar = [MEDCar;MEDIO];
+    MEDCar2 = [MEDCar2;MEDIO];
 end
  
 path = 'D:\BF_DM_13_13\Tres_classes\validation\Cyclist'
@@ -169,7 +169,7 @@ for i=1:size(diretorio,1)
     MEDCyc = [MEDCyc;MEDIO];
 end
  
-Val_Remove_MIN_MAX_RI = [MEDPed;MEDCar;MEDCyc];
+Val_Remove_MIN_MAX_RI = [MEDPed;MEDCar2;MEDCyc];
 save Val_Remove_MIN_MAX_RI.mat Val_Remove_MIN_MAX_RI
 
 %% Train and Validation togheter
@@ -205,13 +205,13 @@ for i=1:size(diretorio,1)
     MEDPed = [MEDPed;MEDIO];
 end
  
-path = 'D:\BF_DM_13_13\Tres_classes\test\Car'
+path = 'D:\BF_DM_13_13\Tres_classes\test\Car2'
 diretorio = dir(path)
 diretorio = diretorio(3:end,:);
-MEDCar =[];
+MEDCar2 =[];
 for i=1:size(diretorio,1)
     i
-    figura = strcat('D:\BF_DM_13_13\Tres_classes\test\Car\',diretorio(i).name);
+    figura = strcat('D:\BF_DM_13_13\Tres_classes\test\Car2\',diretorio(i).name);
     I = imread(figura);
     vector = I(:);
     
@@ -228,7 +228,7 @@ for i=1:size(diretorio,1)
     end
     
     MEDIO = sum(vector)/(size(vector,1));
-    MEDCar = [MEDCar;MEDIO];
+    MEDCar2 = [MEDCar2;MEDIO];
 end
  
 path = 'D:\BF_DM_13_13\Tres_classes\test\Cyclist'
@@ -257,5 +257,5 @@ for i=1:size(diretorio,1)
     MEDCyc = [MEDCyc;MEDIO];
 end
  
-Test_Remove_MIN_MAX_RI = [MEDPed;MEDCar;MEDCyc];
+Test_Remove_MIN_MAX_RI = [MEDPed;MEDCar2;MEDCyc];
 save Test_Remove_MIN_MAX_RI.mat Test_Remove_MIN_MAX_RI
