@@ -6,7 +6,7 @@ Object detection and recognition is a key component of autonomous robotic vehicl
 
 Cropping the 3D point clouds.
 
-![Crop_Point_Clouds](https://github.com/gledsonmelotti/Multimodal-deep-learning-combining-camera-LIDAR-data-/tree/main/Images/frame_114_juntos.png)
+![Crop_Point_Clouds](https://github.com/gledsonmelotti/Multimodal-deep-learning-combining-camera-LIDAR-data-/blob/main/Images/frame_114_juntos.png)
 
 3D point clouds:
 
